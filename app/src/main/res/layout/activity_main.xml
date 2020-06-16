@@ -8,74 +8,42 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:textSize="30sp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View 1" />
-    <TextView
-        android:textSize="30sp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View 1"
+        android:id="@+id/textview1"/>
+    <TextView
+        app:layout_constraintEnd_toStartOf="@id/textview1"
+        app:layout_constraintBottom_toTopOf="@+id/textview1"
+        android:textSize="30sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="View 2" />
     <TextView
+        app:layout_constraintStart_toEndOf="@id/textview1"
+        app:layout_constraintBottom_toTopOf="@+id/textview1"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="View 3" />
     <TextView
+        app:layout_constraintStart_toEndOf="@id/textview1"
+        app:layout_constraintTop_toBottomOf="@+id/textview1"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View 5" />
+    <TextView
+        app:layout_constraintEnd_toStartOf="@id/textview1"
+        app:layout_constraintTop_toBottomOf="@+id/textview1"
+        android:textSize="30sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="View 4" />
-    <TextView
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textSize="30sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View 6" />
-    <TextView
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textSize="30sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View 7" />
-    <TextView
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textSize="30sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View 9" />
-    <TextView
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:textSize="30sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View 8" />
-    <TextView
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:textSize="30sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View 10" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
